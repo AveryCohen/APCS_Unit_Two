@@ -3,6 +3,11 @@ import java.awt.*;
 public class GrowSquarePrinter {
 
     public static void main(String[] args) {
+        Rectangle square = new Rectangle(100, 100, 50, 50);
+        System.out.println(square);
+        square.grow(25,25);
+        square.translate(25,25);
+        System.out.println(square);
 
         // Create a Rectangle object with a starting x, y of (100, 100) and a width and height of 50.
 
