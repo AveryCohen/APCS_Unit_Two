@@ -28,6 +28,7 @@ public class Password {
         String f = lastName.substring(lastName.length()-1, lastName.length());
         String p2 = d + e + f;
         int p3 = age * 75;
+        System.out.println("Password: " + p1 + p2 + p3);
 
 
 
