@@ -8,12 +8,25 @@ public class Names {
         String firstName = scan.nextLine();
         System.out.print("Last name: ");
         String lastName = scan.nextLine();
-        lastName.charAt(lastName.length()-1)
+        lastName.charAt(lastName.length()-1);
         System.out.println(firstName + " " + lastName);
         System.out.println(firstName.length() + lastName.length());
         System.out.println(firstName.substring(0,1) + lastName.substring(0,1));
         System.out.println(firstName.compareTo(lastName));
-        System.out.println(firstName.indexOf());
+        firstName.charAt(firstName.length()-1);
+        lastName.lastIndexOf(firstName.charAt(firstName.length()-1));
+        System.out.println( lastName.lastIndexOf(firstName.charAt(firstName.length()-1)));
+        lastName.charAt(lastName.length()-1);
+        firstName.lastIndexOf(lastName.charAt(lastName.length()-1));
+        System.out.println(firstName.lastIndexOf(lastName.charAt(lastName.length()-1)));
+        int mid1= firstName.length()/2;
+        int mid2= lastName.length()/2;
+        firstName.substring(0,mid1);
+        lastName.substring(mid2,lastName.length()-1);
+        lastName.substring(0,mid2);
+        firstName.substring(mid1,firstName.length());
+        System.out.println( firstName.substring(0,mid1)+lastName.substring(mid2,lastName.length())+" "+ lastName.substring(0,mid2)+
+                firstName.substring(mid1,firstName.length()));
 
 
 
