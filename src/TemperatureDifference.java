@@ -9,12 +9,18 @@ public class TemperatureDifference {
      */
     public static int calculateDifference(int temp1, int temp2) {
 
-        return 0;
+        return Math.abs(temp1 - temp2);
     }
 
     public static void main(String[] args) {
         // Scanner object to get input
         Scanner scan = new Scanner(System.in);
+        System.out.print("Enter the first temperature: ");
+        int temp1 = scan.nextInt();
+        System.out.print("Enter the second temperature: ");
+        int temp2 = scan.nextInt();
+        int diff = calculateDifference(temp1, temp2);
+        System.out.println("The temperature changed "+ diff + " degrees.");
 
         // Get the two temperatures from the user as input
 
